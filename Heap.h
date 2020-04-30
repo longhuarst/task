@@ -13,6 +13,7 @@
 typedef struct {
     int64_t value; //值
     void *object; //目标
+    bool removed; //移除标志
 }HeapElement_TypeDef;
 
 typedef struct{
@@ -21,6 +22,12 @@ typedef struct{
     int length;
     bool min; //小根堆
 }Heap_TypeDef;
+
+#define Heap Heap_TypeDef
+
+
+
+
 
 
 
